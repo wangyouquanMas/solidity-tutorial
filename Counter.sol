@@ -19,6 +19,6 @@ contract Counter {
     // Function to decrement count by 1
     function dec() public {
         // This function will fail if count = 0
-        count -= 23;
+        count -= 233;
     }
 }
