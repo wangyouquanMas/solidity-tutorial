@@ -6,6 +6,6 @@ contract HelloWorld{
     string public greet = "Hello World";
     
     function greetIsCorrect() public returns (bool){
-      return   Assert.equal(greet, "Hello World","greet is not correct");
+      return   Assert.equal(greet, "Hello World","greet iAs not correct");
     }
 }
