@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "cancel",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "enum Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reset",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Status",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "status",
+				"outputs": [
+					{
+						"internalType": "enum Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"datastructure/Enum.sol": "Enum"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"datastructure/Enum.sol": {
+			"keccak256": "0x8747652c2c76e6c3140e9ce722946209fd9de57650ad9aa81adede86870dd881",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://48cee2239491af3d37e23f90a00c9e0f441f43afadcb212a1962666a3c987d4c",
+				"dweb:/ipfs/QmcfELuu7Rs31ekRdkTPnrRbo8X4LR6pKaBYV4JbnnQCSC"
+			]
+		},
+		"datastructure/EnumDeclaration.sol": {
+			"keccak256": "0x9ee2a852f19e0507cd31993235071ed5ca0e0808b1db8b24cf7cd8b74dd66cb8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b32aac03110be0e2eee1d38a730be8967be2e9090d5ce9c7b0b2006cab86a80c",
+				"dweb:/ipfs/QmRVmyxyMLwHys4NLCuUy58ETqHKrkDSbTRUTb7DfFEGTY"
+			]
+		}
+	},
+	"version": 1
+}
