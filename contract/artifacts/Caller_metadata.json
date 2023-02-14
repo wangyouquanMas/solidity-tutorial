@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Test",
+						"name": "test",
+						"type": "address"
+					}
+				],
+				"name": "callTest",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract TestPayable",
+						"name": "test",
+						"type": "address"
+					}
+				],
+				"name": "callTestPayable",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/Fallback.sol": "Caller"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/Fallback.sol": {
+			"keccak256": "0xbcf3013a823416d651453652a825bbd2ca3e9d21f1290aae2017ffa64fe3dc22",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://95b75ac54b61efae178aeabd554586fd1379651d510be922ad34bb9221cc374b",
+				"dweb:/ipfs/QmTQhh9zQWttbAks1vZQQEKKRyYJzG6RvDVKAq7pK3AHJP"
+			]
+		}
+	},
+	"version": 1
+}
