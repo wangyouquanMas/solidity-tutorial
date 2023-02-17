@@ -5,6 +5,11 @@ import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
+//相当于是interface
+// 需要和target交互，因此就需要先确定我需要用到target中哪些东西【方法】。
+//  抽象出来设计接口
+
+// 接口和目标contract需要链接
 contract Deployed {
     function mint(uint256 amount) public payable {}
 
@@ -32,6 +37,8 @@ contract contractMint is IERC721Receiver, Ownable {
         uint256 _max_per_wallet
     ) payable {
         target = _target;
+
+        //
         dc = Deployed(_target);
         MAX_SUPPLY = _max_supply;
         NFT_PRICE = _nft_price;
@@ -47,6 +54,7 @@ contract contractMint is IERC721Receiver, Ownable {
         return 0x150b7a02;
     }
 
+//target ? 
     function mint(uint256 _val) external payable onlyOwner {
         (bool success, ) = target.call{value: _val * NFT_PRICE}(
             //每次message要根据要交互的合约进行更改
@@ -55,6 +63,7 @@ contract contractMint is IERC721Receiver, Ownable {
         require(success);
     }
 
+//打给操作者
     function withdrawMoney() external onlyOwner {
         (bool success, ) = msg.sender.call{value: address(this).balance}("");
         require(success, "Transfer failed.");
@@ -97,6 +106,9 @@ contract mintFactory is Ownable {
     //price价格估算?
     //这里payable去掉也可以 【只是参考代码，不要“太敬畏”】
     //理解payable用法？
+    // {
+    // value: (MAX_PER_WALLET + 1) * NFT_PRICE
+    // }: 表示每次构造时往这个子合约里打了value钱
     function createMint(address _t) external payable {
         contractMint mintContract = new contractMint{
             value: (MAX_PER_WALLET + 1) * NFT_PRICE

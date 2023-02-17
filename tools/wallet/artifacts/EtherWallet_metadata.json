@@ -7,7 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "num",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,10 +25,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "sender",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "",
 						"type": "address"
 					}
@@ -34,33 +39,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_contract",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "setVars",
+				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "value",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -76,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Proxy.sol": "A"
+			"tools/wallet/EtherWallet.sol": "EtherWallet"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Proxy.sol": {
-			"keccak256": "0x1acbaa7fe9dccf8627c985718c114cee7593a8d142e206a7079f93f710ad48a6",
+		"tools/wallet/EtherWallet.sol": {
+			"keccak256": "0xf114b1d63ab56e6940d12b4a7f8e0702fabe5aba8f06abe50d7d9014aac3fab1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://365a8fe8ed684b0aa3a683c7a2eb9e631eed989780a057fba68c5ce6c2401d4c",
-				"dweb:/ipfs/QmbvppC9MTisjHHC6dZzaNDndMWseV4tknmQXYyV9S9CTG"
+				"bzz-raw://929407b6b1dc41c0e3b8206a8e9db102e7ca70f316effd9d144cb1973420d577",
+				"dweb:/ipfs/QmWH3cieqtgBCaPPugyZGbftemm7iW9eWvei2fBDaAyj8e"
 			]
 		}
 	},

@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "name",
+				"name": "num",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -20,12 +20,38 @@
 			},
 			{
 				"inputs": [],
-				"name": "text",
+				"name": "sender",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setVars",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -45,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/constructor.sol": "B"
+			"contract/Proxy.sol": "B"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/constructor.sol": {
-			"keccak256": "0xa66da360b8b839ab8cc805f624073a537b371213cff5e4212946303427994ccf",
+		"contract/Proxy.sol": {
+			"keccak256": "0x1acbaa7fe9dccf8627c985718c114cee7593a8d142e206a7079f93f710ad48a6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca45d404bde1596d5666bd9552e7bfafab5568e20958b3a6f76bcf6eecfb5581",
-				"dweb:/ipfs/QmYgnnPU5ydGsw3wcH3mG2XbvXB5VeMtPv19SZFsCGEUYK"
+				"bzz-raw://365a8fe8ed684b0aa3a683c7a2eb9e631eed989780a057fba68c5ce6c2401d4c",
+				"dweb:/ipfs/QmbvppC9MTisjHHC6dZzaNDndMWseV4tknmQXYyV9S9CTG"
 			]
 		}
 	},
