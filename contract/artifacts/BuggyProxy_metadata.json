@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_etherStoreAddress",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -22,36 +16,23 @@
 			},
 			{
 				"inputs": [],
-				"name": "attack",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "admin",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "etherStore",
+				"name": "implementation",
 				"outputs": [
 					{
-						"internalType": "contract EtherStore",
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -60,17 +41,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_implementation",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"name": "upgradeTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -86,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"attack/ReEntrancy.sol": "Attack"
+			"contract/UpgradeableProxy.sol": "BuggyProxy"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -100,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"attack/ReEntrancy.sol": {
-			"keccak256": "0x198a43983e71fc75d57ff9e8941e4ae181568321b2a99f9c68a3cf2d21acd50a",
+		"contract/UpgradeableProxy.sol": {
+			"keccak256": "0xd10eab9fd8a057b326537e205baf5adb93fcc893504d2c56e952a92774571615",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d21442901df8b1b46660dc7d0a87cdae351266f036e2a09e079498e4895f9ab2",
-				"dweb:/ipfs/QmXfAZo3UYnUPdSXAL1Jn46zCWPmZqKmf4FXyAmjhqBMak"
+				"bzz-raw://2307ef38b0de207d5cf4d771727b75aa3a593dc33db9290221ca9d1847bfd4b9",
+				"dweb:/ipfs/QmcycGt6Zgo58visVffwe5TiHHg3R8CniGR4xq38wQmxRn"
 			]
 		}
 	},

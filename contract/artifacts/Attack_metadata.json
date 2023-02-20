@@ -9,16 +9,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_etherStoreAddress",
+						"name": "_hackMe",
 						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
 			},
 			{
 				"inputs": [],
@@ -28,45 +24,20 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "attack1",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "hackMe",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "etherStore",
-				"outputs": [
-					{
-						"internalType": "contract EtherStore",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -86,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"attack/ReEntrancy.sol": "Attack"
+			"contract/Delegatecall.sol": "Attack"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -100,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"attack/ReEntrancy.sol": {
-			"keccak256": "0x198a43983e71fc75d57ff9e8941e4ae181568321b2a99f9c68a3cf2d21acd50a",
+		"contract/Delegatecall.sol": {
+			"keccak256": "0x32b135f982920a09baff76242e31b8c286d057cbc1a6f7fba5cf7532e31613ea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d21442901df8b1b46660dc7d0a87cdae351266f036e2a09e079498e4895f9ab2",
-				"dweb:/ipfs/QmXfAZo3UYnUPdSXAL1Jn46zCWPmZqKmf4FXyAmjhqBMak"
+				"bzz-raw://e50c954f03ac86e5cdfd99896772018dd7297c6b6549e4745217243190ab2252",
+				"dweb:/ipfs/QmQWCHLRgqbLsUDsmuwaXCwSKsDi5DEcyxG986CoUEqVdz"
 			]
 		}
 	},

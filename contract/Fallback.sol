@@ -1,52 +1,43 @@
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.6.2 <0.9.0;
-
-contract Test{
-    uint x;
-    //无其它函数、 未用payable修饰【不能接收ether】
-    fallback() external {x=1;}
-}
-
-contract TestPayable{
-    uint x;
-    uint y;
-
-    //底层调用：no-empty call 、
-    //非底层调用:消息 、
-    fallback() external payable {x=1; y=msg.value;}
-
-    //普通调用：send 
-    // 非消息、 plain Ether transfer ; 
-    //  empty call 
-    receive() external payable{x=2 ; y=msg.value;}
-}
-
-contract Caller{
-    function callTest(Test test) public returns (bool){
-      (bool success,)  =   address(test).call(abi.encodeWithSignature("nonExistingFunction()"));
-        require(success);
 
 
-     address payable testPayable = payable(address(test));
+//目标：测试fallback被调用的两种情况
+//  1. no matching function signature
+//  2. msg.data不为空
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
 
-    //无payable修饰
-     return testPayable.send(2 ether);   
+contract Fallback {
+    event Log(string func, uint gas);
+
+    // Fallback function must be declared as external.
+    fallback() external payable {
+        // send / transfer (forwards 2300 gas to this fallback function)
+        // call (forwards all of the gas)
+        // emit Log("fallback", gasleft());
+        bytes memory data = msg.data;
+        emit LogData(data);
     }
 
-    function callTestPayable(TestPayable test) public returns (bool){
-        (bool success,) = address(test).call(abi.encodeWithSignature("nonExistingFunction("));
-        require(success);
+    event LogData(bytes data);
 
-
-        (success,) = address(test).call{value: 1}(abi.encodeWithSignature("nonExistingFunction()"));
-        require(success);
-
-
-        (success,) = address(test).call{value: 2 ether}("");
-        require(success);
-
-        return true;
+    // Receive is a variant of fallback that is triggered when msg.data is empty
+    receive() external payable {
+        emit Log("receive", gasleft());
     }
 
+    // Helper function to check the balance of this contract
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}
 
+contract SendToFallback {
+    function transferToFallback(address payable _to) public payable {
+        _to.transfer(msg.value);
+    }
+
+    function callFallback(address payable _to) public payable {
+        (bool sent, ) = _to.call{value: msg.value}("abc");
+        require(sent, "Failed to send Ether");
+    }
 }

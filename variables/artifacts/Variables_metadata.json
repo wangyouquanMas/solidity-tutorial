@@ -6,36 +6,67 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_etherStoreAddress",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "attack",
+				"name": "checkSender",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sender",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "balances",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -43,30 +74,17 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "etherStore",
+				"name": "text",
 				"outputs": [
 					{
-						"internalType": "contract EtherStore",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -86,7 +104,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"attack/ReEntrancy.sol": "Attack"
+			"variables/Variable_test.sol": "Variables"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -100,12 +118,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"attack/ReEntrancy.sol": {
-			"keccak256": "0x198a43983e71fc75d57ff9e8941e4ae181568321b2a99f9c68a3cf2d21acd50a",
-			"license": "MIT",
+		"variables/Variable_test.sol": {
+			"keccak256": "0x31878372116e5c0644f2ecdddd39867c6e288625814eb0eab45acc6a0261334e",
 			"urls": [
-				"bzz-raw://d21442901df8b1b46660dc7d0a87cdae351266f036e2a09e079498e4895f9ab2",
-				"dweb:/ipfs/QmXfAZo3UYnUPdSXAL1Jn46zCWPmZqKmf4FXyAmjhqBMak"
+				"bzz-raw://ae5861e612e883a393a56d742ff73aad4de2d8736f3a9025b1c3d0b3f0c457d2",
+				"dweb:/ipfs/QmSXBATd9Un3jY1HK9Q2FPLvc6HpWc5h5Dd9osxyKKXvwq"
 			]
 		}
 	},

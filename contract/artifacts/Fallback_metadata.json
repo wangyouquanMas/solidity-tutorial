@@ -6,30 +6,40 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
-				"outputs": [
+						"indexed": false,
+						"internalType": "string",
+						"name": "func",
+						"type": "string"
+					},
 					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "gas",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "Log",
+				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "deposit",
-				"outputs": [],
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "LogData",
+				"type": "event"
+			},
+			{
 				"stateMutability": "payable",
-				"type": "function"
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
@@ -45,11 +55,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -65,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"attack/ReEntrancy.sol": "EtherStore"
+			"contract/Fallback.sol": "Fallback"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -79,12 +86,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"attack/ReEntrancy.sol": {
-			"keccak256": "0x198a43983e71fc75d57ff9e8941e4ae181568321b2a99f9c68a3cf2d21acd50a",
+		"contract/Fallback.sol": {
+			"keccak256": "0xb4255d82e7af00c34fcaa39f49dab8d08451da83d648420b5c5abe6d0406f295",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d21442901df8b1b46660dc7d0a87cdae351266f036e2a09e079498e4895f9ab2",
-				"dweb:/ipfs/QmXfAZo3UYnUPdSXAL1Jn46zCWPmZqKmf4FXyAmjhqBMak"
+				"bzz-raw://c81efe9023410d75fbb375e4b28aef7dfd93b6c896e1fd01d3c7460543b619d7",
+				"dweb:/ipfs/QmWEEc9psDLpZgMwwcaC9xrwDUkRkx51BoYmaPnYJjfhDg"
 			]
 		}
 	},

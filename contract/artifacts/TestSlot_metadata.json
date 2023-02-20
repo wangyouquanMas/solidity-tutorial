@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "num",
+				"name": "getSlot",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -20,12 +20,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "sender",
+				"name": "slot",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "bytes32",
 						"name": "",
-						"type": "address"
+						"type": "bytes32"
 					}
 				],
 				"stateMutability": "view",
@@ -35,31 +35,13 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_contract",
+						"name": "_addr",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
 					}
 				],
-				"name": "setVars",
+				"name": "writeSlot",
 				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "value",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -76,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Delegatecall1.sol": "A"
+			"contract/UpgradeableProxy.sol": "TestSlot"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Delegatecall1.sol": {
-			"keccak256": "0xda9de3a41569b43e4f1bfa238bc6f9c579b0e54291a89f6a71a3e150c7c9e76c",
+		"contract/UpgradeableProxy.sol": {
+			"keccak256": "0xd10eab9fd8a057b326537e205baf5adb93fcc893504d2c56e952a92774571615",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7781a4a63fa73167bfeaaf39eeab27ba23b88ae03a895900d036be3b257ec63f",
-				"dweb:/ipfs/Qmd7kYpVUDiDGDhLfGFTCNMJx17Qcg5h56svvyyMbj4izh"
+				"bzz-raw://2307ef38b0de207d5cf4d771727b75aa3a593dc33db9290221ca9d1847bfd4b9",
+				"dweb:/ipfs/QmcycGt6Zgo58visVffwe5TiHHg3R8CniGR4xq38wQmxRn"
 			]
 		}
 	},

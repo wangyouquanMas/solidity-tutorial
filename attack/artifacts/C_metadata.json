@@ -9,16 +9,21 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "_attack",
 						"type": "address"
 					}
 				],
-				"name": "balances",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "contract Attack",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -29,26 +34,6 @@
 				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -65,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"attack/ReEntrancy.sol": "EtherStore"
+			"attack/ReEntrancy.sol": "C"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -80,11 +65,11 @@
 	},
 	"sources": {
 		"attack/ReEntrancy.sol": {
-			"keccak256": "0x198a43983e71fc75d57ff9e8941e4ae181568321b2a99f9c68a3cf2d21acd50a",
+			"keccak256": "0xad0d4ad61ff124e07849a09c75a27a09f09a643bb772acb3cb615f3ccda53b90",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d21442901df8b1b46660dc7d0a87cdae351266f036e2a09e079498e4895f9ab2",
-				"dweb:/ipfs/QmXfAZo3UYnUPdSXAL1Jn46zCWPmZqKmf4FXyAmjhqBMak"
+				"bzz-raw://f8e312f98e9954cd1a6e8a433b338594a7ba6795039aaba8d42ab4b8ce8683d7",
+				"dweb:/ipfs/QmTjgJ4UyCcimLpBgKEaBtjgGK5qmyEphAJhN66FFFNL4J"
 			]
 		}
 	},

@@ -42,11 +42,11 @@
 	},
 	"sources": {
 		"contract/Fallback.sol": {
-			"keccak256": "0xbcf3013a823416d651453652a825bbd2ca3e9d21f1290aae2017ffa64fe3dc22",
+			"keccak256": "0x3c2fb05b47021cc1bf792f21e23d2009e333beb53be2ec5e8b55548ce1ce856e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://95b75ac54b61efae178aeabd554586fd1379651d510be922ad34bb9221cc374b",
-				"dweb:/ipfs/QmTQhh9zQWttbAks1vZQQEKKRyYJzG6RvDVKAq7pK3AHJP"
+				"bzz-raw://db460472bade5764162a598db38c7fdc86e23d0330adf9d6821d85e834a2bcbb",
+				"dweb:/ipfs/QmUaguUQSwrR6DDzVKUJQwMZSMrLTYUtPEUfLaNKze8VpY"
 			]
 		}
 	},

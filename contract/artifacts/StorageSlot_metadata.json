@@ -4,12 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"stateMutability": "nonpayable",
-				"type": "fallback"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -23,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Fallback.sol": "Test"
+			"contract/UpgradeableProxy.sol": "StorageSlot"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -37,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Fallback.sol": {
-			"keccak256": "0x3c2fb05b47021cc1bf792f21e23d2009e333beb53be2ec5e8b55548ce1ce856e",
-			"license": "GPL-3.0",
+		"contract/UpgradeableProxy.sol": {
+			"keccak256": "0xd10eab9fd8a057b326537e205baf5adb93fcc893504d2c56e952a92774571615",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://db460472bade5764162a598db38c7fdc86e23d0330adf9d6821d85e834a2bcbb",
-				"dweb:/ipfs/QmUaguUQSwrR6DDzVKUJQwMZSMrLTYUtPEUfLaNKze8VpY"
+				"bzz-raw://2307ef38b0de207d5cf4d771727b75aa3a593dc33db9290221ca9d1847bfd4b9",
+				"dweb:/ipfs/QmcycGt6Zgo58visVffwe5TiHHg3R8CniGR4xq38wQmxRn"
 			]
 		}
 	},

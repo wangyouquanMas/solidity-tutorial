@@ -71,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Proxy.sol": "B"
+			"contract/Delegatecall1.sol": "B"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -85,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Proxy.sol": {
-			"keccak256": "0x1acbaa7fe9dccf8627c985718c114cee7593a8d142e206a7079f93f710ad48a6",
+		"contract/Delegatecall1.sol": {
+			"keccak256": "0xda9de3a41569b43e4f1bfa238bc6f9c579b0e54291a89f6a71a3e150c7c9e76c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://365a8fe8ed684b0aa3a683c7a2eb9e631eed989780a057fba68c5ce6c2401d4c",
-				"dweb:/ipfs/QmbvppC9MTisjHHC6dZzaNDndMWseV4tknmQXYyV9S9CTG"
+				"bzz-raw://7781a4a63fa73167bfeaaf39eeab27ba23b88ae03a895900d036be3b257ec63f",
+				"dweb:/ipfs/Qmd7kYpVUDiDGDhLfGFTCNMJx17Qcg5h56svvyyMbj4izh"
 			]
 		}
 	},

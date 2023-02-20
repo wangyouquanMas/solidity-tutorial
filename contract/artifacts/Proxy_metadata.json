@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "proxy_",
+						"name": "implementation_",
 						"type": "address"
 					}
 				],
@@ -17,21 +17,12 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "num",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
-				"name": "proxy",
+				"name": "implementation",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -41,30 +32,15 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "num",
-						"type": "uint256"
-					}
-				],
-				"name": "setVars",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"constructor": {
+					"details": "初始化逻辑合约地址"
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -75,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Delegatecall1.sol": "Caller"
+			"contract/Proxy_test.sol": "Proxy"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -89,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Delegatecall1.sol": {
-			"keccak256": "0x77e15d508efdaad3b25c279294af5400a1d81af475f9e64ceefa3ddb565ce569",
+		"contract/Proxy_test.sol": {
+			"keccak256": "0x484107d138017d03068c62d013f6dd685db4cafa12b133d8494509a0ad7ee299",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7ff843bdab48a47e32de2e1b7c9132c0a575d502d623624ebc9a8584bb1305e1",
-				"dweb:/ipfs/QmPnrqsZN9XmayFvVbcGDVux5CdAXxp6EDjktv9ZqBQMoJ"
+				"bzz-raw://0d93693ed9dd2fe460af4c03b9be73c412c01c5be4b5483337b72bb8a7b4e94f",
+				"dweb:/ipfs/QmXi2LNLZcXRYhN6DCdf3nuZaMEv1opqTofLqyTKREQsxj"
 			]
 		}
 	},

@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "num",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sender",
+				"name": "MY_ADDRESS",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -32,26 +19,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_contract",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "setVars",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "value",
+				"name": "MY_UINT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -76,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Delegatecall1.sol": "A"
+			"variables/Constants.sol": "Constants"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Delegatecall1.sol": {
-			"keccak256": "0xda9de3a41569b43e4f1bfa238bc6f9c579b0e54291a89f6a71a3e150c7c9e76c",
+		"variables/Constants.sol": {
+			"keccak256": "0x41afebf3f036b247b71c20959da7f1e4015d8e58c395c02d1abf056d73bf6874",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7781a4a63fa73167bfeaaf39eeab27ba23b88ae03a895900d036be3b257ec63f",
-				"dweb:/ipfs/Qmd7kYpVUDiDGDhLfGFTCNMJx17Qcg5h56svvyyMbj4izh"
+				"bzz-raw://d80eeb04173cbed18b8fb345aa63dad396aeedc73c13ca67ec46475095e0f6df",
+				"dweb:/ipfs/QmRerUfrwDHXFjD4vR49ySeVDVky1cvYXV4bJhD2egwQtE"
 			]
 		}
 	},

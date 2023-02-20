@@ -6,36 +6,27 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_etherStoreAddress",
-						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
+				"anonymous": false,
+				"inputs": [],
+				"name": "CallSuccess",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "attack",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "implementation",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "balances",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -43,25 +34,12 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "etherStore",
-				"outputs": [
-					{
-						"internalType": "contract EtherStore",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
+				"name": "x",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -74,6 +52,7 @@
 			}
 		],
 		"devdoc": {
+			"details": "逻辑合约，执行被委托的调用",
 			"kind": "dev",
 			"methods": {},
 			"version": 1
@@ -86,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"attack/ReEntrancy.sol": "Attack"
+			"contract/Proxy_test.sol": "Logic"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -100,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"attack/ReEntrancy.sol": {
-			"keccak256": "0x198a43983e71fc75d57ff9e8941e4ae181568321b2a99f9c68a3cf2d21acd50a",
+		"contract/Proxy_test.sol": {
+			"keccak256": "0x484107d138017d03068c62d013f6dd685db4cafa12b133d8494509a0ad7ee299",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d21442901df8b1b46660dc7d0a87cdae351266f036e2a09e079498e4895f9ab2",
-				"dweb:/ipfs/QmXfAZo3UYnUPdSXAL1Jn46zCWPmZqKmf4FXyAmjhqBMak"
+				"bzz-raw://0d93693ed9dd2fe460af4c03b9be73c412c01c5be4b5483337b72bb8a7b4e94f",
+				"dweb:/ipfs/QmXi2LNLZcXRYhN6DCdf3nuZaMEv1opqTofLqyTKREQsxj"
 			]
 		}
 	},
