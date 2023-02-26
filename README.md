@@ -1,4 +1,4 @@
 # solidity-tutorial
-为solidity中文社区贡献一点力量
+为想学习solidity的中文用户贡献一点力量
 尽量不写垃圾内容
 #
