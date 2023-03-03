@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gaslimit",
+						"type": "uint256"
+					}
+				],
+				"name": "MsgLog",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "exampleFunction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/Msg.sol": "Msg"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/Msg.sol": {
+			"keccak256": "0x2f228d7f0814f710c63b5ce1fb9db667ab392904b086a689a0e037eecaacab04",
+			"urls": [
+				"bzz-raw://9fd693615d699dc008b53f0fb84088c3d0c01e58c5b97eb6d7b18fb443141dd4",
+				"dweb:/ipfs/QmWCxfMrsz7YzJqFTtmDeoscdHK7AjiXsNrKbEsqVQ59PC"
+			]
+		}
+	},
+	"version": 1
+}

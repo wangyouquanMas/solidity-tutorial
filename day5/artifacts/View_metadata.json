@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day4/View.sol": "View"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day4/View.sol": {
+			"keccak256": "0x933220cfb22532b627a5b30cb1a29a175d81230e3d0dc06ef691fbee5e3a4627",
+			"urls": [
+				"bzz-raw://27ec58d5f90a257c53f843621d6f798e4e2132f6b00dba41715267b02ef72aca",
+				"dweb:/ipfs/QmWNu8EhE8KT8VVE4MrVGLeecgr5jTFmkWvEgcnu2EpCKu"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "globalVariable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "localVariable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/Scope.sol": "VariableScope"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/Scope.sol": {
+			"keccak256": "0xc123d1f040589ba50f6629618d29fc0ecc970c00415df1fc21d99dbfcb0e7fec",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e25a87f9084896fcc503292085c7c4e95c83978b59717ff4c041ad5ee3f14cb9",
+				"dweb:/ipfs/QmS6rQB9m1UjQSdYAYRo86KmssqDF3SYccXCXCQL7RC894"
+			]
+		}
+	},
+	"version": 1
+}

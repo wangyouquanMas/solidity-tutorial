@@ -1,0 +1,57 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "doSomething",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day4/Modifier.sol": "MyContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day4/Modifier.sol": {
+			"keccak256": "0xa608ce6b4a84c80f741d0d9c2019dc5b9702dd41061ac850034c3aea4a756cda",
+			"urls": [
+				"bzz-raw://5a051fc6ccae85c0576fe3a53aab86d17315f4365e1f1c4661d2ee5e13bc0b7d",
+				"dweb:/ipfs/QmdoGSrJ3KxMVd3PAQona4xzaeWsen1DF9HT2adXjNA3vU"
+			]
+		}
+	},
+	"version": 1
+}
