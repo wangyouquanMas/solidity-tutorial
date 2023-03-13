@@ -34,6 +34,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes1",
+						"name": "b",
+						"type": "bytes1"
+					}
+				],
+				"name": "pushByte",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "bytes",
 						"name": "newData",
 						"type": "bytes"
@@ -73,11 +86,11 @@
 	},
 	"sources": {
 		"day3/Bytes.sol": {
-			"keccak256": "0x07286e4cfe32b90fed0309902905eec67c5201a3c59708ac443c59799b36a8bb",
+			"keccak256": "0x882f3494f34d288fb4138a8ca6b1f06b8559464dab9912947b69b2ab08a8011d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://38bfb7afd3640d6e1ccad2733368e457673db993ee3864f3b41cf7cbb3da9eef",
-				"dweb:/ipfs/QmPEmgyzc215urheMqw8xi8YEBYL4WUNzKD8qxBmM4MRgc"
+				"bzz-raw://5a1c60898a451d2e08bcbf490c1152009dde0d9d0c23a5df696cf0775d8279bb",
+				"dweb:/ipfs/QmYMEU3J7b6SSwJYfWg2s8WwW9u8PLTygriux3ADb7wRRk"
 			]
 		}
 	},

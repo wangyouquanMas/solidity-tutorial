@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day3/ConstantStorage.sol": "StorageBytes"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day3/ConstantStorage.sol": {
+			"keccak256": "0xda225528d78a28b5ff7ac8fd3a52d363957542cdf3e706d67b903751d6b62d04",
+			"urls": [
+				"bzz-raw://cf3bc72ecacda09182cee865fc723e978794f6fe46c92ea392209ab51a250ad5",
+				"dweb:/ipfs/QmTrnJHWoqQhC14Cr94Mdiyf8ZeJHXaKtvLcucnyXJjvrU"
+			]
+		}
+	},
+	"version": 1
+}
