@@ -8,6 +8,8 @@ contract Struct{
         string name;
         uint age;
         address wallet;
+        //Recursive struct is not allowed.
+       // Person person;
     }
 
     Person[] public people;

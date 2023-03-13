@@ -31,8 +31,10 @@ contract Primitives{
 
 
 contract TransferETH {
+        event transferLog(address sender, uint value);
     function transfer(address payable recipient) public payable {
         recipient.transfer(msg.value);
+        emit transferLog(msg.sender, msg.value);
     }
 
      function send(address payable recipient) public payable returns (bool) {
@@ -42,6 +44,11 @@ contract TransferETH {
       function call(address payable recipient) public payable returns (bool) {
          (bool sent, )  = recipient.call{value: msg.value}("abc");
          return sent ; 
+    }
+    
+    event depositLog(address sender, uint value);
+    function deposit() public payable{
+         emit depositLog(msg.sender, msg.value);   
     }
 
 }

@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "res",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day5/Return.sol": "Return"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day5/Return.sol": {
+			"keccak256": "0xfbbab7c7db0e431a524c7f4c26d471291493d69226eed62773a46d684e99200d",
+			"urls": [
+				"bzz-raw://6151d1b8f17f575b559e93c968e2a309657fbe7800abe9e15f00317984c44958",
+				"dweb:/ipfs/QmWsX2jLAf6SUV4eibpr2J87fDM4992Y4jnn1rGoHU5MQ7"
+			]
+		}
+	},
+	"version": 1
+}

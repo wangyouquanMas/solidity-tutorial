@@ -106,11 +106,11 @@
 	},
 	"sources": {
 		"day2/Address.sol": {
-			"keccak256": "0xc304097cc523446ada9cebc104c1fc8904fd2dfff85ffb070a700d148a49ea29",
+			"keccak256": "0xe62c3ef0ce4e30c7c4003403344569a6312c974cf68a2a51b9f92d53db62d447",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f68e46f11996cd1e6e676ddf1fd40fa595970099dbbfbc3f6be6d4f062cf1cd6",
-				"dweb:/ipfs/QmYS6QMwpeMyWiMpLeVobEAo8bBcoj5k3Fc9QgPSxWWjCy"
+				"bzz-raw://0ccd848204705283dc719833b6d3cbeeefab7cd7c6df215b40250cc92d339b7e",
+				"dweb:/ipfs/QmdmmzDH1piSvyRNAyxfq4u1pJ15uyh94a5k1q4FGsJgsF"
 			]
 		}
 	},

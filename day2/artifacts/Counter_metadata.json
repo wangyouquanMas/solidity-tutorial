@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "query_index",
+				"outputs": [
+					{
+						"internalType": "bytes1",
+						"name": "",
+						"type": "bytes1"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "query_length",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/Array.sol": "Counter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/Array.sol": {
+			"keccak256": "0x34be65be814ad15ffbfa64660b1045bf9d3d772fd0f3a7c43e85b24fa6bb2ca6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d77f2d581b74252c4a86f0658246fd901bceee59fd351a54fc8d9bcee18f411",
+				"dweb:/ipfs/QmagLgrKifBgiQ3NTV7eUKV59fYMwvbf5WHBDWo3iG2CTk"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "len",
+						"type": "uint256"
+					}
+				],
+				"name": "f",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/MemoryArray.sol": "MemoryArray"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/MemoryArray.sol": {
+			"keccak256": "0x0f5b59bf987ed56ba85d675a5fe06e3174d4d28681da322c184d03d5ec019a87",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f3d0b57d3c431ff07b6605c72e5369ae7358ee33541711c85cc37e177a88650",
+				"dweb:/ipfs/QmW9j3YK6UH4gkPcLY1HddwzQtXPLQ1RydRKfsNtcR1GuD"
+			]
+		}
+	},
+	"version": 1
+}
