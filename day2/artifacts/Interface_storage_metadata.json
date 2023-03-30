@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "test_storage",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/Interface_storage.sol": "Interface_storage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/Interface_storage.sol": {
+			"keccak256": "0xf1b5795b7b6fe8f37a9c90d2c91b30c88ed2d2e5b9636db4306dca18944c6606",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://029a5576691a4a0007f25a447a19a2b19430a5f1d0d5af53fbb35fe537852b3b",
+				"dweb:/ipfs/QmNMueUvKQ4CcE5HrT9jdNfWuAPBLrsd7SqdL1tK5cTmZw"
+			]
+		}
+	},
+	"version": 1
+}

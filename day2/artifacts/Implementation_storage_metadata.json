@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "test_storage",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/Implementation_storageInterface.sol": "Implementation_storage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/Implementation_storageInterface.sol": {
+			"keccak256": "0xb0c7aee4a097d0f629ec1520c01531dcd8a88a663da7b873df04f259c5be9546",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://891ef29c65f92dff6be3fb53a8b69bd53a631fb1c7ab82c4437459ed57c471f6",
+				"dweb:/ipfs/QmQTXL3TgWihy9iv9imXbbTx8BQMfgV9GadoENsd5wLpnU"
+			]
+		},
+		"day2/Interface_storage.sol": {
+			"keccak256": "0x8203e41fc419961c86f400d194a3ebd9c8c145918dc9d624dd0134872e67ce64",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b0c80f291db42e28eb32f5a793cbf3f70f01fb1d5c62cdb1b208b01203bbd509",
+				"dweb:/ipfs/QmTTB8QJF8suXvofrUxP16NH1djppSYFLAj8bEanBX82ZW"
+			]
+		}
+	},
+	"version": 1
+}

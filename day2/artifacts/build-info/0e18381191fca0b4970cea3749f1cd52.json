@@ -1,0 +1,784 @@
+{
+	"id": "0e18381191fca0b4970cea3749f1cd52",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"day2/Library_person.sol": {
+				"content": "\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\nimport \"./Interface_storage.sol\";\r\n\r\nlibrary  Library_person\r\n{\r\n    struct Person{\r\n        string name;\r\n        uint age;\r\n        string gender;\r\n        Interface_storage interface_storage;\r\n    }\r\n}"
+			},
+			"day2/Interface_storage.sol": {
+				"content": "\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\n\r\ninterface  Interface_storage\r\n{\r\n  function test_storage(uint amount) external view returns (bool);\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"day2/Interface_storage.sol": {
+				"Interface_storage": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								}
+							],
+							"name": "test_storage",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"test_storage(uint256)": "e1015113"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"test_storage\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"day2/Interface_storage.sol\":\"Interface_storage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"day2/Interface_storage.sol\":{\"keccak256\":\"0x8cf85376deca769faf693aba6055a3b8853e2838ae9ef2e10c176cf07d83a347\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a494909439fbd46b70b9ce1b5896a04c003112e68cdcee0700740d4eaf58ce36\",\"dweb:/ipfs/QmX8XS9oa4XP1RBeKDknfs825rL1qGNz8GhpPbTgwo44B4\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			},
+			"day2/Library_person.sol": {
+				"Library_person": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"day2/Library_person.sol\":98:265  library  Library_person... */\n  dataSize(sub_0)\n  dataOffset(sub_0)\n  0x0b\n  dup3\n  dup3\n  dup3\n  codecopy\n  dup1\n  mload\n  0x00\n  byte\n  0x73\n  eq\n  tag_1\n  jumpi\n  mstore(0x00, 0x4e487b7100000000000000000000000000000000000000000000000000000000)\n  mstore(0x04, 0x00)\n  revert(0x00, 0x24)\ntag_1:\n  mstore(0x00, address)\n  0x73\n  dup2\n  mstore8\n  dup3\n  dup2\n  return\nstop\n\nsub_0: assembly {\n        /* \"day2/Library_person.sol\":98:265  library  Library_person... */\n      eq(address, deployTimeAddress())\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220d444f0a8839e3990fa9cef85b056d275796614b323a6147cdb752e0ca9d053e364736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d444f0a8839e3990fa9cef85b056d275796614b323a6147cdb752e0ca9d053e364736f6c63430008110033",
+							"opcodes": "PUSH1 0x56 PUSH1 0x50 PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH1 0x0 BYTE PUSH1 0x73 EQ PUSH1 0x43 JUMPI PUSH32 0x4E487B7100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 MSTORE PUSH1 0x0 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST ADDRESS PUSH1 0x0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD4 DIFFICULTY CREATE 0xA8 DUP4 SWAP15 CODECOPY SWAP1 STATICCALL SWAP13 0xEF DUP6 0xB0 JUMP 0xD2 PUSH22 0x796614B323A6147CDB752E0CA9D053E364736F6C6343 STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "98:167:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d444f0a8839e3990fa9cef85b056d275796614b323a6147cdb752e0ca9d053e364736f6c63430008110033",
+							"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD4 DIFFICULTY CREATE 0xA8 DUP4 SWAP15 CODECOPY SWAP1 STATICCALL SWAP13 0xEF DUP6 0xB0 JUMP 0xD2 PUSH22 0x796614B323A6147CDB752E0CA9D053E364736F6C6343 STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "98:167:1:-:0;;;;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "17200",
+								"executionCost": "97",
+								"totalCost": "17297"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH #[$]",
+									"source": 1,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH [$]",
+									"source": 1,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "B"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP3",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP3",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP3",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "CODECOPY",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP1",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "MLOAD",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "BYTE",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "73"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "EQ",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH [tag]",
+									"source": 1,
+									"value": "1"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "JUMPI",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "4E487B7100000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "MSTORE",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "4"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "MSTORE",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "24"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "REVERT",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "tag",
+									"source": 1,
+									"value": "1"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "JUMPDEST",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "ADDRESS",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "MSTORE",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "PUSH",
+									"source": 1,
+									"value": "73"
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP2",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "MSTORE8",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP3",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "DUP2",
+									"source": 1
+								},
+								{
+									"begin": 98,
+									"end": 265,
+									"name": "RETURN",
+									"source": 1
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220d444f0a8839e3990fa9cef85b056d275796614b323a6147cdb752e0ca9d053e364736f6c63430008110033",
+									".code": [
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "PUSHDEPLOYADDRESS",
+											"source": 1
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "ADDRESS",
+											"source": 1
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "EQ",
+											"source": 1
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "PUSH",
+											"source": 1,
+											"value": "80"
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "PUSH",
+											"source": 1,
+											"value": "40"
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "MSTORE",
+											"source": 1
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "PUSH",
+											"source": 1,
+											"value": "0"
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "DUP1",
+											"source": 1
+										},
+										{
+											"begin": 98,
+											"end": 265,
+											"name": "REVERT",
+											"source": 1
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"day2/Interface_storage.sol",
+								"day2/Library_person.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"day2/Library_person.sol\":\"Library_person\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"day2/Interface_storage.sol\":{\"keccak256\":\"0x8cf85376deca769faf693aba6055a3b8853e2838ae9ef2e10c176cf07d83a347\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a494909439fbd46b70b9ce1b5896a04c003112e68cdcee0700740d4eaf58ce36\",\"dweb:/ipfs/QmX8XS9oa4XP1RBeKDknfs825rL1qGNz8GhpPbTgwo44B4\"]},\"day2/Library_person.sol\":{\"keccak256\":\"0x099c39ab67567a980cd4ea2db21b2c8095831c582e3122a1664a78643db3fe27\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6d021d515a0fb0bfc7fcb7dbf3630752656c1c6b1ddd4ee365e8a14c32932267\",\"dweb:/ipfs/QmRvddfF1Hnwv46zHfpVtW4hxmUAXA8rXHXiyAPtYRx2GH\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"day2/Interface_storage.sol": {
+				"ast": {
+					"absolutePath": "day2/Interface_storage.sol",
+					"exportedSymbols": {
+						"Interface_storage": [
+							9
+						]
+					},
+					"id": 10,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".17"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Interface_storage",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 9,
+							"linearizedBaseContracts": [
+								9
+							],
+							"name": "Interface_storage",
+							"nameLocation": "74:17:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "e1015113",
+									"id": 8,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "test_storage",
+									"nameLocation": "107:12:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 3,
+												"mutability": "mutable",
+												"name": "amount",
+												"nameLocation": "125:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 8,
+												"src": "120:11:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 2,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "120:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "119:13:0"
+									},
+									"returnParameters": {
+										"id": 7,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 6,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 8,
+												"src": "156:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 5,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "156:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "155:6:0"
+									},
+									"scope": 9,
+									"src": "98:64:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 10,
+							"src": "63:102:0",
+							"usedErrors": []
+						}
+					],
+					"src": "35:130:0"
+				},
+				"id": 0
+			},
+			"day2/Library_person.sol": {
+				"ast": {
+					"absolutePath": "day2/Library_person.sol",
+					"exportedSymbols": {
+						"Interface_storage": [
+							9
+						],
+						"Library_person": [
+							23
+						]
+					},
+					"id": 24,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 11,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".17"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:24:1"
+						},
+						{
+							"absolutePath": "day2/Interface_storage.sol",
+							"file": "./Interface_storage.sol",
+							"id": 12,
+							"nameLocation": "-1:-1:-1",
+							"nodeType": "ImportDirective",
+							"scope": 24,
+							"sourceUnit": 10,
+							"src": "61:33:1",
+							"symbolAliases": [],
+							"unitAlias": ""
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Library_person",
+							"contractDependencies": [],
+							"contractKind": "library",
+							"fullyImplemented": true,
+							"id": 23,
+							"linearizedBaseContracts": [
+								23
+							],
+							"name": "Library_person",
+							"nameLocation": "107:14:1",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Library_person.Person",
+									"id": 22,
+									"members": [
+										{
+											"constant": false,
+											"id": 14,
+											"mutability": "mutable",
+											"name": "name",
+											"nameLocation": "161:4:1",
+											"nodeType": "VariableDeclaration",
+											"scope": 22,
+											"src": "154:11:1",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 13,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "154:6:1",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 16,
+											"mutability": "mutable",
+											"name": "age",
+											"nameLocation": "181:3:1",
+											"nodeType": "VariableDeclaration",
+											"scope": 22,
+											"src": "176:8:1",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 15,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "176:4:1",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 18,
+											"mutability": "mutable",
+											"name": "gender",
+											"nameLocation": "202:6:1",
+											"nodeType": "VariableDeclaration",
+											"scope": 22,
+											"src": "195:13:1",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 17,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "195:6:1",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 21,
+											"mutability": "mutable",
+											"name": "interface_storage",
+											"nameLocation": "237:17:1",
+											"nodeType": "VariableDeclaration",
+											"scope": 22,
+											"src": "219:35:1",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_contract$_Interface_storage_$9",
+												"typeString": "contract Interface_storage"
+											},
+											"typeName": {
+												"id": 20,
+												"nodeType": "UserDefinedTypeName",
+												"pathNode": {
+													"id": 19,
+													"name": "Interface_storage",
+													"nameLocations": [
+														"219:17:1"
+													],
+													"nodeType": "IdentifierPath",
+													"referencedDeclaration": 9,
+													"src": "219:17:1"
+												},
+												"referencedDeclaration": 9,
+												"src": "219:17:1",
+												"typeDescriptions": {
+													"typeIdentifier": "t_contract$_Interface_storage_$9",
+													"typeString": "contract Interface_storage"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Person",
+									"nameLocation": "137:6:1",
+									"nodeType": "StructDefinition",
+									"scope": 23,
+									"src": "130:132:1",
+									"visibility": "public"
+								}
+							],
+							"scope": 24,
+							"src": "98:167:1",
+							"usedErrors": []
+						}
+					],
+					"src": "35:230:1"
+				},
+				"id": 1
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day2/Library_person.sol": "Library_person"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day2/Interface_storage.sol": {
+			"keccak256": "0x8cf85376deca769faf693aba6055a3b8853e2838ae9ef2e10c176cf07d83a347",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a494909439fbd46b70b9ce1b5896a04c003112e68cdcee0700740d4eaf58ce36",
+				"dweb:/ipfs/QmX8XS9oa4XP1RBeKDknfs825rL1qGNz8GhpPbTgwo44B4"
+			]
+		},
+		"day2/Library_person.sol": {
+			"keccak256": "0x099c39ab67567a980cd4ea2db21b2c8095831c582e3122a1664a78643db3fe27",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d021d515a0fb0bfc7fcb7dbf3630752656c1c6b1ddd4ee365e8a14c32932267",
+				"dweb:/ipfs/QmRvddfF1Hnwv46zHfpVtW4hxmUAXA8rXHXiyAPtYRx2GH"
+			]
+		}
+	},
+	"version": 1
+}

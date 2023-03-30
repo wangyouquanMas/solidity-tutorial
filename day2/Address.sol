@@ -41,8 +41,11 @@ contract TransferETH {
        return  recipient.send(msg.value);
     }
     
+        event gasLog(uint gas);
       function call(address payable recipient) public payable returns (bool) {
-         (bool sent, )  = recipient.call{value: msg.value}("abc");
+        //   emit gasLog(gasleft());
+         (bool sent, )  = recipient.call{value: msg.value,gas:gasleft()}("abc");
+          emit gasLog(gasleft());
          return sent ; 
     }
     
