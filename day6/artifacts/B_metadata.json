@@ -6,22 +6,15 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getAx",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
@@ -50,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"day5/InheritanceShadow.sol": "B"
+			"day6/Constructor_implement.sol": "B"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -64,12 +57,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"day5/InheritanceShadow.sol": {
-			"keccak256": "0x2d7af55fe17ce133ca504b8fb290f655f5650c94cce8e71cf0c64903985a1ce5",
-			"license": "MIT",
+		"day6/Constructor_implement.sol": {
+			"keccak256": "0x1dc9bcd170358e0358e849d3d35c2f95f267f3df03bb74671228beb14fcf0db1",
 			"urls": [
-				"bzz-raw://c0004ee979a4a0f4bd0eadd578cad991968770292ccfaca46156c5b13c785bdf",
-				"dweb:/ipfs/QmcVJ6ju6ZNe83XUuDPk6ny49bPvQmVCpFafdJ2jxBRRXj"
+				"bzz-raw://e7843c934b81078ac2dcdc5388299475fc85decf26a521fbe69cf680d23242e7",
+				"dweb:/ipfs/QmcVdqrrGgNgVQiYC75AEeiNWRMsYWaKF7ubm6UuixuTbS"
 			]
 		}
 	},

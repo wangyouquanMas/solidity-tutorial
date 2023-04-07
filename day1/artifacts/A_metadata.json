@@ -6,19 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_c",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "x",
+				"name": "getSomething",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -43,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"day6/Constructor_implement.sol": "A"
+			"day1/ImportB.sol": "A"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -57,11 +51,18 @@
 		"remappings": []
 	},
 	"sources": {
-		"day6/Constructor_implement.sol": {
-			"keccak256": "0x1dc9bcd170358e0358e849d3d35c2f95f267f3df03bb74671228beb14fcf0db1",
+		"day1/B.sol": {
+			"keccak256": "0x58165ba8416e38cad2b1dde6749b78ce4f8f5fc7e497c71056faff8750d07b29",
 			"urls": [
-				"bzz-raw://e7843c934b81078ac2dcdc5388299475fc85decf26a521fbe69cf680d23242e7",
-				"dweb:/ipfs/QmcVdqrrGgNgVQiYC75AEeiNWRMsYWaKF7ubm6UuixuTbS"
+				"bzz-raw://d5b97ea6f82a49bf12d57ab56534e091c8df27e34e8ce05cd3f472ba1cde67de",
+				"dweb:/ipfs/QmUJXvBLcBMZLwGZVgHtW57sdDPHi2tAzMvHmy8igDoiFR"
+			]
+		},
+		"day1/ImportB.sol": {
+			"keccak256": "0x48cc5578113e8bd7678bd39073ff29c203537eac43fccb1f16cc312648479be2",
+			"urls": [
+				"bzz-raw://2f1c174fcb936817b1e7e624199b1b2703f0dca442480abece517cbefd83c76e",
+				"dweb:/ipfs/QmaCr3mPBvPunVWcf7CaxeiJEQDQzhs2wmyk6DDzvn2KBt"
 			]
 		}
 	},
