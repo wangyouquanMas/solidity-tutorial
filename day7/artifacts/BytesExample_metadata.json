@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createBytes",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day7/Bytes.sol": "BytesExample"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day7/Bytes.sol": {
+			"keccak256": "0x3e4c1fb285e43b0347453a33f30cfa0e8edaad31704db7aebe8ae52ef25d99b1",
+			"urls": [
+				"bzz-raw://e2cdedbab1f94f01ae18292cb59c0566333474b1fa4811b41dffff4a66142b60",
+				"dweb:/ipfs/QmXbdEewfYfB8kfnnyaWdHmzymvx4KGwXNEqBgKc7yp3o1"
+			]
+		}
+	},
+	"version": 1
+}
